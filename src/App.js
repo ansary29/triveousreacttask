@@ -101,8 +101,9 @@ function App() {
   return (
     <ChakraProvider>
       <CSSReset />
+      <Navbar loggedIn={loggedIn} handleLogout={handleLogout} />
       <Container maxW="container.md" p={4}>
-        <Navbar loggedIn={loggedIn} handleLogout={handleLogout} />
+        
         <Routes>
           <Route
             path="/"
